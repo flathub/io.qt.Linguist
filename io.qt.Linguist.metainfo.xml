@@ -15,7 +15,7 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://raw.githubusercontent.com/JakobDev/flathub/78c853bd0488bf62e2042b2011d674e08dcf7b76/Screenshots/MainWindow.png</image>
+      <image type="source">https://raw.githubusercontent.com/flathub/io.qt.Linguist/78c853bd0488bf62e2042b2011d674e08dcf7b76/Screenshots/MainWindow.png</image>
     </screenshot>
   </screenshots>
   <releases>
