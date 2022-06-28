@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop">
-  <!--Created with jdAppdataEdit 2.1-->
+  <!--Created with jdAppdataEdit 3.3-->
   <id>io.qt.Linguist</id>
   <name>Qt Linguist</name>
   <summary>Add translations to Qt applications</summary>
@@ -34,4 +34,8 @@
     <control>keyboard</control>
   </requires>
   <content_rating type="oars-1.1"/>
+  <provides>
+    <mediatype>text/vnd.trolltech.linguist</mediatype>
+    <mediatype>application/x-linguist</mediatype>
+  </provides>
 </component>
