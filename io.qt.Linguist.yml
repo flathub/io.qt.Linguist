@@ -15,7 +15,7 @@ modules:
     build-commands:
       - mkdir -p /app/bin
       - ln -s /usr/bin/linguist $FLATPAK_DEST/bin/linguist
-      - install -Dm644 io.qt.Linguist.png -t $FLATPAK_DEST/share/icons/hicolor/128x128
+      - install -Dm644 io.qt.Linguist.png -t $FLATPAK_DEST/share/icons/hicolor/128x128/apps
       - install -Dm644 io.qt.Linguist.desktop -t $FLATPAK_DEST/share/applications
       - install -Dm644 io.qt.Linguist.metainfo.xml -t $FLATPAK_DEST/share/metainfo
     sources:
