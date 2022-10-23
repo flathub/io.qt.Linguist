@@ -1,6 +1,6 @@
 app-id: io.qt.Linguist
 runtime: org.kde.Sdk
-runtime-version: "6.3"
+runtime-version: "6.4"
 sdk: org.kde.Sdk
 command: linguist
 finish-args:
@@ -14,10 +14,10 @@ modules:
     buildsystem: simple
     build-commands:
       - mkdir -p /app/bin
-      - ln -s /usr/bin/linguist /app/bin/linguist
-      - install -Dm644 io.qt.Linguist.png /app/share/icons/hicolor/128x128/apps/io.qt.Linguist.png
-      - install -Dm644 io.qt.Linguist.desktop /app/share/applications/io.qt.Linguist.desktop
-      - install -Dm644 io.qt.Linguist.metainfo.xml /app/share/metainfo/io.qt.Linguist.metainfo.xml
+      - ln -s /usr/bin/linguist $FLATPAK_DEST/bin/linguist
+      - install -Dm644 -t io.qt.Linguist.png $FLATPAK_DEST/share/icons/hicolor/128x128
+      - install -Dm644 -t io.qt.Linguist.desktop $FLATPAK_DEST/share/applications
+      - install -Dm644 -t io.qt.Linguist.metainfo.xml $FLATPAK_DEST/share/metainfo
     sources:
       - type: file
         path: io.qt.Linguist.png
