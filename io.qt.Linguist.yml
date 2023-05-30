@@ -1,6 +1,6 @@
 app-id: io.qt.Linguist
 runtime: org.kde.Sdk
-runtime-version: "6.4"
+runtime-version: "6.5"
 sdk: org.kde.Sdk
 command: linguist
 finish-args:
