@@ -43,7 +43,7 @@
   <content_rating type="oars-1.1"/>
   <launchable type="desktop-id">io.qt.Linguist.desktop</launchable>
   <provides>
-    <binary></binary>
+    <binary>linguist</binary>
     <mediatype>text/vnd.trolltech.linguist</mediatype>
     <mediatype>application/x-linguist</mediatype>
   </provides>
