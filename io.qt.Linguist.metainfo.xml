@@ -5,8 +5,8 @@
   <name>Qt Linguist</name>
   <summary>Add translations to Qt applications</summary>
   <summary xml:lang="de">Übersetzungen zu Qt Programmen hinzufügen</summary>
-  <developer id="io.qt">
-    <name>The Qt Company</name>
+  <developer id="org.qt-project">
+    <name>Qt Project</name>
   </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0-only</project_license>
