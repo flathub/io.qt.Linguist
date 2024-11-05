@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop-application">
-  <!--Created with jdAppStreamEdit 8.0-->
+  <!--Created with jdAppStreamEdit 9.2-->
   <id>io.qt.Linguist</id>
   <name>Qt Linguist</name>
   <summary>Add translations to Qt applications</summary>
@@ -23,6 +23,7 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="6.8" date="2024-10-08" type="stable"/>
     <release version="6.7" date="2024-04-02" type="stable"/>
     <release version="6.6" date="2023-09-26" type="stable"/>
     <release version="6.5" date="2023-04-03" type="stable"/>
@@ -31,6 +32,7 @@
     <release version="6.2.1" date="2021-10-27" type="stable"/>
   </releases>
   <url type="homepage">https://www.qt.io/</url>
+  <url type="bugtracker">https://bugreports.qt.io</url>
   <url type="vcs-browser">https://code.qt.io/cgit/qt/qttools.git/tree/src/linguist/linguist</url>
   <url type="contribute">https://www.qt.io/community/contribute-to-qt</url>
   <categories>
