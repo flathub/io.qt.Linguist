@@ -1,12 +1,13 @@
 id: io.qt.Linguist
-runtime: org.kde.Sdk
-runtime-version: "6.10"
+runtime: org.kde.Platform
+runtime-version: "6.11"
 sdk: org.kde.Sdk
 command: linguist
 finish-args:
   - --socket=fallback-x11
   - --filesystem=host:rw
   - --socket=wayland
+  - --share=network
   - --device=dri
   - --share=ipc
 
@@ -16,16 +17,19 @@ modules:
   - name: qt6-qttools
     buildsystem: cmake-ninja
     post-install:
-      # Create a temp location before cleanup the module
-      # and move the linguist binary
       - mkdir -p /app/qt6-qttools/
       - mv /app/bin/linguist /app/qt6-qttools/linguist
-    cleanup:
-      - "*"
     sources:
       - type: archive
-        url: https://download.qt.io/official_releases/qt/6.10/6.10.2/submodules/qttools-everywhere-src-6.10.2.tar.xz
-        sha256: 1e3d2c07c1fd76d2425c6eaeeaa62ffaff5f79210c4e1a5bc2a6a9db668d5b24
+        url: https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qttools-everywhere-src-6.11.1.tar.xz
+        sha256: 8e61835a679c93fa9c6065b142353c2071ba68e297898937c32a03777fcaf50d
+        x-checker-data:
+          type: anitya
+          project-id: 7927
+          stable-only: true
+          url-template: https://download.qt.io/official_releases/qt/6.11/$version/submodules/qttools-everywhere-src-$version.tar.xz
+          versions:
+            <: 6.12.0
 
   - name: linguist
     buildsystem: simple
