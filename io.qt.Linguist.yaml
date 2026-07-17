@@ -19,8 +19,6 @@ modules:
     post-install:
       - mkdir -p /app/qt6-qttools/
       - mv /app/bin/linguist /app/qt6-qttools/linguist
-    cleanup:
-      - "*"
     sources:
       - type: archive
         url: https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qttools-everywhere-src-6.11.1.tar.xz
